@@ -19,6 +19,7 @@ for d in content:
     current = d
 print('part 1:', increase)
 
+#part 2
 increase = 0
 current = sum(content[:3])
 for i in range(len(content) - 2):
