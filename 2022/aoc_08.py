@@ -25,10 +25,8 @@ for j in range(1, len(trees)-1):
         for arr in [up, down, left, right]:
             if len(np.where(arr >= h)[0]):
                 score *= np.min(np.where(arr >= h)) + 1
-                val = np.min(np.where(arr >= h)) + 1
             else:
                 score *= len(arr)
-                val = len(arr)
         max_score = max(score, max_score)
 print('Part 1:', visible)
 print('Part 2:', max_score)
