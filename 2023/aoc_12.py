@@ -77,8 +77,6 @@ count = 0
 count2 = 0
 for i, (pat, cont) in enumerate(data):
     count += dynamic_counts(pat,cont)
-    '''if dynamic_counts(pat,cont) != counts(pat,cont):
-        print(pat, cont)'''
     pat2 = '?'.join([pat]*5)
     cont2 = cont*5
     count2 += dynamic_counts(pat2, cont2)
